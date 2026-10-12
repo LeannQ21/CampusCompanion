@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CampusCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnA-xu-zIE">
+                                <rect key="frame" x="20" y="178" width="353" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Campus, In Your Pocket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4r-Ib-YGG">
+                                <rect key="frame" x="36" y="219" width="321" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9k-P8-NNa">
+                                <rect key="frame" x="76" y="279" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4mP-ZA-uFQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="fK3-iV-ycs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-wp-vzY">
+                                <rect key="frame" x="141" y="453" width="112" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Get Started"/>
+                                <connections>
+                                    <action selector="getStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiA-n6-XCw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wnA-xu-zIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2xS-94-ilr"/>
+                            <constraint firstItem="kyM-wp-vzY" firstAttribute="top" secondItem="Q9k-P8-NNa" secondAttribute="bottom" constant="24" id="5D8-6n-xwT"/>
+                            <constraint firstItem="A4r-Ib-YGG" firstAttribute="top" secondItem="wnA-xu-zIE" secondAttribute="bottom" constant="8" id="KiF-Gp-acT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wnA-xu-zIE" secondAttribute="bottom" constant="690" id="MZU-lf-TX2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wnA-xu-zIE" secondAttribute="trailing" constant="20" id="Sud-zH-RZV"/>
+                            <constraint firstAttribute="trailing" secondItem="wnA-xu-zIE" secondAttribute="trailing" constant="20" id="Uzb-Zh-ciW"/>
+                            <constraint firstItem="A4r-Ib-YGG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aHp-AZ-qkw"/>
+                            <constraint firstItem="wnA-xu-zIE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="d1b-mc-MhO"/>
+                            <constraint firstItem="kyM-wp-vzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="jW0-TC-8eI"/>
+                            <constraint firstItem="wnA-xu-zIE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="o6e-Jo-4zC"/>
+                            <constraint firstItem="wnA-xu-zIE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oiT-Xl-SBg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wnA-xu-zIE" secondAttribute="bottom" constant="691" id="pah-4g-dP5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4r-Ib-YGG" secondAttribute="trailing" constant="20" id="tWZ-fI-jRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kyM-wp-vzY" secondAttribute="trailing" constant="140" id="vTh-3T-XY9"/>
+                            <constraint firstItem="kyM-wp-vzY" firstAttribute="top" secondItem="Q9k-P8-NNa" secondAttribute="bottom" constant="24" id="vXV-Ph-2dr"/>
+                            <constraint firstItem="Q9k-P8-NNa" firstAttribute="top" secondItem="A4r-Ib-YGG" secondAttribute="bottom" constant="40" id="zF3-d6-Z61"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStarted" destination="kyM-wp-vzY" id="lDA-rn-czf"/>
+                        <outlet property="subtitleLabel" destination="A4r-Ib-YGG" id="0BS-MS-iwm"/>
+                        <outlet property="titleLabel" destination="A4r-Ib-YGG" id="ymi-2I-pDb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
